@@ -11,7 +11,7 @@ def map_sentiment(score):
         return "Rất tích cực"
     else:
         return "Ngoài phạm vi"
-
+    
 # Example usage
 if __name__ == "__main__":
     test_scores = [-4.5, -2.5, 0, 2, 4.5, 6]

@@ -13,6 +13,8 @@ class SentimentAnalysisModel:
             ('tfidf', TfidfVectorizer(max_features=5000)),
             ('classifier', LogisticRegression())
         ])
+
+        
     
     def train(self, X_train, y_train):
         """

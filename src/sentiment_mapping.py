@@ -1,13 +1,4 @@
 def map_sentiment(score):
-    """
-    Map a sentiment score to a sentiment label.
-
-    Args:
-        score (float): Sentiment score ranging from -5 to 5.
-
-    Returns:
-        str: Sentiment label.
-    """
     if -5 <= score < -3:
         return "Vô cùng tiêu cực"
     elif -3 <= score < -1:

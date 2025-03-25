@@ -36,3 +36,21 @@ def build_model(vocab_size, embedding_dim=128, max_len=100):
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
     return model
 
+# Main function
+if __name__ == "__main__":
+    # Load and preprocess data
+    comments, labels = load_data('vietnamese_comments.csv')  # Replace with your dataset path
+    padded_sequences, tokenizer = preprocess_text(comments)
+    vocab_size = len(tokenizer.word_index) + 1
+
+    # Split data
+    X_train, X_test, y_train, y_test = train_test_split(padded_sequences, labels, test_size=0.2, random_state=42)
+
+    # Build and train model
+    model = build_model(vocab_size)
+    model.summary()
+    model.fit(X_train, y_train, epochs=5, batch_size=32, validation_split=0.2)
+
+    # Evaluate model
+    y_pred = (model.predict(X_test) > 0.5).astype("int32")
+    print(classification_report(y_test, y_pred))

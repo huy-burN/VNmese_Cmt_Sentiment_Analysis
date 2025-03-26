@@ -54,3 +54,7 @@ if __name__ == "__main__":
     # Evaluate model
     y_pred = (model.predict(X_test) > 0.5).astype("int32")
     print(classification_report(y_test, y_pred))
+
+    # Save model
+    model.save('sentiment_analysis_model.h5')  # Save the model
+    print("Model saved successfully.")

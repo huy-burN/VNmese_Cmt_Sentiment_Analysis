@@ -1,0 +1,39 @@
+1. Hồi quy tuyến tính (Học có giám sát):
+    - Định nghĩa: Một thuật toán hồi quy được sử dụng để dự đoán biến mục tiêu liên tục dựa trên một hoặc nhiều đặc trưng đầu vào bằng cách tìm mối quan hệ tuyến tính.
+    - Mô tả: Nó tối thiểu hóa tổng bình phương sai số giữa giá trị quan sát và giá trị dự đoán để tìm đường thẳng phù hợp nhất.
+
+2. Hồi quy Logistic (Học có giám sát):
+    - Định nghĩa: Một thuật toán phân loại được sử dụng để dự đoán xác suất của một kết quả nhị phân.
+    - Mô tả: Nó sử dụng hàm logistic để mô hình hóa mối quan hệ giữa các đặc trưng đầu vào và xác suất của lớp mục tiêu.
+
+3. Cây quyết định (Học có giám sát):
+    - Định nghĩa: Một thuật toán dựa trên cây được sử dụng cho các nhiệm vụ phân loại và hồi quy bằng cách chia dữ liệu thành các tập con dựa trên giá trị đặc trưng.
+    - Mô tả: Nó tạo ra một cấu trúc cây, trong đó mỗi nút đại diện cho một quy tắc quyết định và các lá đại diện cho kết quả.
+
+4. Máy vector hỗ trợ (SVM) (Học có giám sát):
+    - Định nghĩa: Một thuật toán phân loại tìm siêu phẳng tốt nhất để phân tách các điểm dữ liệu của các lớp khác nhau.
+    - Mô tả: Nó tối đa hóa khoảng cách giữa các điểm dữ liệu và siêu phẳng, làm cho nó hiệu quả với dữ liệu có chiều cao.
+
+5. K-Láng giềng gần nhất (KNN) (Học có giám sát):
+    - Định nghĩa: Một thuật toán phân loại và hồi quy dự đoán đầu ra dựa trên lớp chiếm đa số hoặc trung bình của k điểm dữ liệu gần nhất.
+    - Mô tả: Đây là một thuật toán phi tham số dựa vào các phép đo khoảng cách để tìm láng giềng.
+
+6. Phân cụm K-Means (Học không giám sát):
+    - Định nghĩa: Một thuật toán phân cụm chia dữ liệu thành k cụm dựa trên sự tương đồng đặc trưng.
+    - Mô tả: Nó lặp lại việc gán các điểm dữ liệu vào tâm cụm gần nhất và cập nhật tâm cụm cho đến khi hội tụ.
+
+7. Phân tích thành phần chính (PCA) (Học không giám sát):
+    - Định nghĩa: Một thuật toán giảm chiều dữ liệu chuyển đổi dữ liệu sang không gian có chiều thấp hơn trong khi vẫn bảo toàn phương sai.
+    - Mô tả: Nó xác định các thành phần chính, là các hướng trực giao của phương sai lớn nhất trong dữ liệu.
+
+8. Mô hình hỗn hợp Gaussian (GMM) (Học không giám sát):
+    - Định nghĩa: Một thuật toán phân cụm xác suất mô hình hóa dữ liệu như một hỗn hợp của các phân phối Gaussian.
+    - Mô tả: Nó sử dụng thuật toán Kỳ vọng-Tối đa (EM) để ước lượng tham số và gán xác suất cho các cụm.
+
+9. Q-Learning (Học tăng cường):
+    - Định nghĩa: Một thuật toán học tăng cường không mô hình học hàm giá trị hành động tối ưu cho một môi trường nhất định.
+    - Mô tả: Nó cập nhật giá trị Q dựa trên phần thưởng nhận được từ các hành động và phần thưởng tối đa trong tương lai.
+
+10. Mạng Q-Sâu (DQN) (Học tăng cường):
+    - Định nghĩa: Một thuật toán học tăng cường kết hợp Q-Learning với mạng nơ-ron sâu để xử lý không gian trạng thái có chiều cao.
+    - Mô tả: Nó sử dụng phát lại kinh nghiệm và mạng mục tiêu để ổn định quá trình huấn luyện và cải thiện hiệu quả học tập

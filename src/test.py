@@ -2,7 +2,7 @@ from src.model import SentimentAnalysisModel
 from src.utils import preprocess_text
 
 def test_sentiment_analysis():
-    # Khởi tạo model
+    # Khởi tạo modell
     model = SentimentAnalysisModel()
     
     # Ví dụ một số bình luận tiếng Việt

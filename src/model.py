@@ -13,13 +13,10 @@ class SentimentAnalysisModel:
             ('tfidf', TfidfVectorizer(max_features=5000)),
             ('classifier', LogisticRegression())
         ])
-
-        
     
     def train(self, X_train, y_train):
         """
         Train the sentiment analysis model.
-        
         Args:
             X_train (list of str): The training data (comments).
             y_train (list of int): The training labels (0 for negative, 1 for positive).
@@ -57,3 +54,4 @@ class SentimentAnalysisModel:
         """
         with open(filepath, 'rb') as file:
             self.model = pickle.load(file)
+            

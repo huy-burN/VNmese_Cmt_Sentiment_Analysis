@@ -37,4 +37,4 @@
 10. Mạng Q-Sâu (DQN) (Học tăng cường):
     - Định nghĩa: Một thuật toán học tăng cường kết hợp Q-Learning với mạng nơ-ron sâu để xử lý không gian trạng thái có chiều cao.
     - Mô tả: Nó sử dụng phát lại kinh nghiệm và mạng mục tiêu để ổn định quá trình huấn luyện và cải thiện hiệu quả học tập
-    ###
+    

@@ -56,3 +56,26 @@ class SentimentAnalysisModelWithRAG(SentimentAnalysisModel):
         similarities = cosine_similarity(query_vector, self.knowledge_vectors).flatten()
         top_indices = np.argsort(similarities)[-top_k:][::-1]
         return [self.knowledge_base[i] for i in top_indices]
+    
+def main():
+    # Example usage
+    knowledge_base = [
+        "This product is great!",
+        "I am not satisfied with the service.",
+        "The quality is excellent.",
+        "I had a bad experience.",
+        "This is the best purchase I've made."
+    ]
+
+    model = SentimentAnalysisModelWithRAG(knowledge_base)
+    
+    query = "I love this product!"
+    retrieved_docs = model.retrieve(query, top_k=2)
+    
+    print("Retrieved Documents:")
+    for doc in retrieved_docs:
+        print(doc)
+
+if __name__ == "__main__":
+    main()
+# This code defines a simple sentiment analysis model with a retrieval mechanism

@@ -2,6 +2,7 @@ import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 class SentimentAnalysisModel:
     """
@@ -54,4 +55,25 @@ class SentimentAnalysisModel:
         """
         with open(filepath, 'rb') as file:
             self.model = pickle.load(file)
+
+    def evaluate(self, X_test, y_test):
+        """
+        Evaluate the model's performance.
+        
+        Args:
+            X_test (list of str): The test data (comments).
+            y_test (list of int): The true labels.
+            
+        Returns:
+            dict: Dictionary containing accuracy, precision, recall and f1-score.
+        """
+        y_pred = self.predict(X_test)
+        return {
+            'accuracy': accuracy_score(y_test, y_pred),
+            'precision': precision_score(y_test, y_pred),
+            'recall': recall_score(y_test, y_pred),
+            'f1': f1_score(y_test, y_pred)
+        }
+
+    
             

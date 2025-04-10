@@ -69,7 +69,7 @@ def main():
 
     model = SentimentAnalysisModelWithRAG(knowledge_base)
     
-    query = "what negative experiences are there?"
+    query = "what negative experiences aree there?"
     retrieved_docs = model.retrieve(query, top_k=2)
     
     print("Retrieved Documents:")

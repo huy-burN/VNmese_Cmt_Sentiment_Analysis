@@ -68,7 +68,7 @@ def main():
     ]
 
     model = SentimentAnalysisModelWithRAG(knowledge_base)
-    
+    #anhoicahoi1canchico45k
     query = "what negative experiences are there?"
     retrieved_docs = model.retrieve(query, top_k=2)
     
@@ -78,4 +78,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-# This code defines a simple sentiment analysis model with a retrieval mechanism
+# This is a simple example of how to implement a retrieval mechanism in a sentiment analysis model.
+# In a real-world scenario, you would replace the placeholder methods with actual implementations for training and predicting sentiment.
+# The retrieval mechanism can be further enhanced by using more sophisticated models or techniques, such as embeddings or neural networks.
+# The above code provides a basic structure for a sentiment analysis model with retrieval capabilities.

@@ -17,7 +17,7 @@ def load_data(filepath, text_column, label_column):
     # Load the CSV file into a DataFrame
     data = pd.read_csv(filepath)
     
-    # Extract the text and labels
+    # Extract the text and label
     X = data[text_column].astype(str).tolist()
     y = data[label_column].astype(int).tolist()
     

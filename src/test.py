@@ -10,7 +10,7 @@ def test_sentiment_analysis():
         "Sản phẩm rất tốt, tôi rất hài lòng!", 
         "Dịch vụ tệ quá, không nên mua",
         "Bình thường, không có gì đặc biệt",
-        "Tuyệt vời, sẽ mua lại",
+        "Tuyệt vời, sẽ mua lại vào cái ngày tao chết",
         "Chất lượng kém, không đáng tiền"
     ]
     

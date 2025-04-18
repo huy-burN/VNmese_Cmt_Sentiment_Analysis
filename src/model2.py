@@ -58,3 +58,4 @@ if __name__ == "__main__":
     # Save model
     model.save('sentiment_analysis_model.h5')  # Save the modell
     print("Model saved successfully.")
+    

@@ -51,10 +51,11 @@ if __name__ == "__main__":
     model.summary()
     model.fit(X_train, y_train, epochs=5, batch_size=32, validation_split=0.2)
 
-    # Evaluate model
+    # Evaluate model    
     y_pred = (model.predict(X_test) > 0.5).astype("int32")
     print(classification_report(y_test, y_pred))
 
     # Save model
-    model.save('sentiment_analysis_model.h5')  # Save the model
+    model.save('sentiment_analysis_model.h5')  # Save the modell
     print("Model saved successfully.")
+    

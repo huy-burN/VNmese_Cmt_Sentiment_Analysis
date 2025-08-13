@@ -9,7 +9,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 
-# Load datasett
+# Load datasettt
 def load_data(file_path):
     data = pd.read_csv(file_path)
     return data['comment'], data['label']

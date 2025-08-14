@@ -9,7 +9,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 
-# Load datasetttxxa
+# Load datasetttxxas
 def load_data(file_path):
     data = pd.read_csv(file_path)
     return data['comment'], data['label']
@@ -22,7 +22,7 @@ def preprocess_text(comments, max_words=10000, max_len=100):
     padded_sequences = pad_sequences(sequences, maxlen=max_len, padding='post', truncating='post')
     return padded_sequences, tokenizer
 
-# Build model
+# Build modell
 def build_model(vocab_size, embedding_dim=128, max_len=100):
     model = Sequential([
         Embedding(vocab_size, embedding_dim, input_length=max_len),

@@ -22,7 +22,7 @@ def preprocess_text(comments, max_words=10000, max_len=100):
     padded_sequences = pad_sequences(sequences, maxlen=max_len, padding='post', truncating='post')
     return padded_sequences, tokenizer
 
-# Build modell
+# Build modelllel
 def build_model(vocab_size, embedding_dim=128, max_len=100):
     model = Sequential([
         Embedding(vocab_size, embedding_dim, input_length=max_len),

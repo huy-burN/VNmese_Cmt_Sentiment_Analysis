@@ -14,7 +14,7 @@ def load_data(file_path):
     data = pd.read_csv(file_path)
     return data['comment'], data['label']
 
-# Preprocess text
+# Preprocess textt
 def preprocess_text(comments, max_words=10000, max_len=100):
     tokenizer = Tokenizer(num_words=max_words, oov_token="<OOV>")
     tokenizer.fit_on_texts(comments)

@@ -14,7 +14,7 @@ def load_data(filepath, text_column, label_column):
             - X (list of str): The text data.
             - y (list of int): The corresponding labels.
     """
-    # Load the CSV file into a DataFrame
+    # Load the CSV file into a DataFramee
     data = pd.read_csv(filepath)
     
     # Extract the text and label

@@ -5,7 +5,7 @@ def test_sentiment_analysis():
     # Khởi tạo modell
     model = SentimentAnalysisModel()
     
-    # Ví dụ một số bình luận tiếng Việt
+    # Ví dụ một số bình luận tiếng Việtt
     comments = [
         "Sản phẩm rất tốt, tôi rất hài lòng!", 
         "Dịch vụ tệ quá, không nên mua",

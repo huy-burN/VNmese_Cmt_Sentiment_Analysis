@@ -14,7 +14,7 @@ def test_sentiment_analysis():
         "Chất lượng kém, không đáng tiền"
     ]
     
-    # Tiền xử lý văn bản
+    # Tiền xử lý văn bảnn
     processed_comments = preprocess_text(comments)
     
     # Dự đoán cảm xúc cho từnng bình luận

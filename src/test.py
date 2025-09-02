@@ -17,7 +17,7 @@ def test_sentiment_analysis():
     # Tiền xử lý văn bảnn
     processed_comments = preprocess_text(comments)
     
-    # Dự đoán cảm xúc cho từnng bình luậnn
+    # Dự đoán cảm xúc cho từnng bình luậnnn
     print("Kết quả phân tích cảm xúc:")
     print("-" * 50)
     for comment, processed_comment in zip(comments, processed_comments):

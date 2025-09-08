@@ -3,7 +3,7 @@ from src.data_loader import load_data
 from src.model import SentimentAnalysisModel
 from src.utils import preprocess_text
 
-#stun
+#stun lát cme2
 def main():
     parser = argparse.ArgumentParser(description="Vietnamese Comment Sentiment Analysis")
     parser.add_argument('--data', type=str, required=True, help="Path to the dataset")
